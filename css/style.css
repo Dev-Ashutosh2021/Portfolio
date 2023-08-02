@@ -314,6 +314,13 @@ p{
     margin-bottom: 0.3125rem;
 }
 
+#mail{
+    font-size: 1.2rem;
+}
+
+#mail-icon{
+    font-size: 3rem;
+}
 
 /* Services */
 .services_wrapper h5{

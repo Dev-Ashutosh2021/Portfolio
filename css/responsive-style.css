@@ -91,10 +91,10 @@
 }
 
 
-@media (max-width: 390px){
+@media (max-width: 500px){
     
     .banner_wrapper .banner-content h2::after{
-        left:34%;
+        left:30%;
     }
 
     .banner_wrapper h5{
