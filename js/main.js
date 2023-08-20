@@ -36,6 +36,7 @@ const observer=new IntersectionObserver((entries)=>{
   entries.forEach((entry)=>{
     if(entry.isIntersecting)
     {
+      document.getElementById('about-logo').style.visibility="visible";
       entry.target.classList.add("animate__animated","animate__fadeInLeft","animate__delay-1s");
     }
   });

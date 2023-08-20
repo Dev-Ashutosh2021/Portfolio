@@ -328,6 +328,11 @@ p{
     font-size: 3rem;
 }
 
+#about-logo{
+    visibility:hidden;
+}
+
+
 /* Services */
 .services_wrapper h5{
     font-size: 1.8rem;
