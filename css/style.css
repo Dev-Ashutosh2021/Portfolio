@@ -99,6 +99,8 @@ section{
     background: var(--bg-white);
     color: var(--secondary-text);
     box-shadow: none;
+    animation: headShake;
+    animation-duration: 1s;
 }
 
 .secondary-btn{
@@ -111,6 +113,8 @@ section{
     background:var(--gradient);
     color:var(--text-white);
     box-shadow: none;
+    animation: headShake;
+    animation-duration: 1s;
 }
 
 h1{
@@ -190,6 +194,8 @@ p{
 .header_wrapper .nav-link.active,
 .header_wrapper .nav-link:hover{
     color:var(--primary-text);
+    animation: pulse;
+    animation-duration: 1s;
 }
 
 .header-scrolled{

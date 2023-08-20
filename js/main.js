@@ -30,3 +30,30 @@ function showPage() {
   document.getElementById("loader").style.display = "none";
   document.getElementById("myDiv").style.display = "block";
 }
+
+//Animation
+const observer=new IntersectionObserver((entries)=>{
+  entries.forEach((entry)=>{
+    if(entry.isIntersecting)
+    {
+      entry.target.classList.add("animate__animated","animate__fadeInLeft","animate__delay-1s");
+    }
+  });
+});
+
+const hiddenElements=document.querySelectorAll('.hidden');
+hiddenElements.forEach((el)=> observer.observe(el));
+
+
+
+const observe=new IntersectionObserver((enter)=>{
+  enter.forEach((entry)=>{
+    if(entry.isIntersecting)
+    {
+      entry.target.classList.add("animate__animated","animate__fadeIn","animate__delay-1s");
+    }
+  });
+});
+
+const hiddenElement=document.querySelectorAll('.hide');
+hiddenElement.forEach((el)=> observe.observe(el));

@@ -16,6 +16,10 @@
     <!--Custom CSS-->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive-style.css">
+
+    <!--Animation CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    
 </head>
 
 <body onload="myFunction()" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="90">
@@ -24,225 +28,248 @@
 
     <div id="myDiv" class="animate-bottom">
 
-    <!-- Navbar Section Start-->
-    <header class="header_wrapper">
-        <nav class="navbar navbar-expand-lg fixed-top">
+        <!-- Navbar Section Start-->
+        <header class="header_wrapper">
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/logo.png" class="img-fluid" alt="logo" /></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <i class="fas fa-stream"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                        <div class="navbar-nav menu-navbar-nav">
+                            <a class="nav-link" aria-current="page" href="#home">Home</a>
+                            <a class="nav-link" href="#about">About</a>
+                            <a class="nav-link" href="#services">Services</a>
+                            <a class="nav-link" href="#projects">Projects</a>
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- Navbar Section End-->
+
+        <!-- Banner Section Start-->
+        <section id="home" class="banner_wrapper">
             <div class="container">
-              <a class="navbar-brand" href="index.html">
-                <img src="images/logo.png" class="img-fluid" alt="logo"/></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-stream"></i>
-              </button>
-
-              <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                <div class="navbar-nav menu-navbar-nav">
-                  <a class="nav-link" aria-current="page" href="#home">Home</a>
-                  <a class="nav-link" href="#about">About</a>
-                  <a class="nav-link" href="#services">Services</a>
-                  <a class="nav-link" href="#projects">Projects</a>
-                  <a class="nav-link" href="#contact">Contact</a>
-                </div>
-              </div>
-            </div>
-          </nav>
-    </header>
-    <!-- Navbar Section End-->
-
-    <!-- Banner Section Start-->
-    <section id="home" class="banner_wrapper">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-7 order-lg-1 order-2 banner-content">
-                    <h2 class="text-uppercase position-relative">Hello</h2>
-                    <h1 class="text-uppercase">I  am  Ashutosh  Uniyal</h1>
-                    <div id="typing" class="position-relative">
-                        <h5 id="type" class="text-uppercase position-absolute"></h5>
-                    </div>
-                    <div class="mt-5">
-                        <a class="main-btn primary-btn mt-5" href="https://wa.me/917983990200?text=Hire%20Me">Hire Me</a>
-                        <a class="main-btn secondary-btn ms-4" href="doc/Resume.pdf">Get CV</a>
-                    </div>
-                </div>
-                <div class="col-lg-5 order-lg-2 order-1">
-                    <div class="top-right-img">
-                        <img src="images/home-right.webp" class="img-fluid">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Banner Section End -->
-
-    <!-- About Section -->
-    <section id="about" class="about_wrapper">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-7 mb-4 mb-lg-0">
-                    <img src="images/about-us.webp" class="img-fluid" alt="about-us">
-                </div>
-                <div class="col-lg-5 mb-4 mb-lg-0">
-                    <h3>Let's <br>Introduce about <br>myself</h3>
-                    <p>
-                        Hello there! I'm Ashutosh Uniyal, a passionate and aspiring full stack web developer. With a strong foundation in web technologies and a deep curiosity for all things digital, I'm excited to showcase my journey and creations in the world of web development.<br><br>
-                        As a recent entrant into the realm of full stack development, I bring a fresh perspective and an eagerness to learn and grow. My journey began with a fascination for crafting visually appealing and functional websites, and it has evolved into a comprehensive skill set that covers both front-end and back-end development.<br><br>
-                        From designing intuitive user interfaces to building robust server-side solutions, I've been on an incredible learning curve, absorbing knowledge and putting it into practice. This portfolio is a testament to my dedication, hard work, and the projects I've embarked upon during this exciting phase.<br><br>
-                        I believe in the power of collaboration and continuous improvement. I'm thrilled to connect with fellow developers, clients, and anyone who shares the same passion for technology. So take a look around, explore the projects I've worked on, and feel free to get in touch. Let's join forces to turn ideas into reality.<br><br>
-                        Thank you for stopping by and being a part of my journey!<br><br>
-                        Best regards,<br>
-                        Ashutosh Uniyal<br>
-                        Full Stack Web Developer
-                    </p>
-                    <a href="doc/Resume.pdf" class="main-btn primary-btn mt-4">Download CV</a>
-                </div>
-            </div>
-            <div class="row justify-content-center pt-5">
-                <div class="col-lg-6 mb-4 mb-lg-0">
-                    <div class="row">
-                        <div class="col-md-4 col-sm-6 mb-4">
-                            <div class="single-logo-item">
-                                <img src="images/skills/html.png" class="img-fluid">
-                            </div>
+                <div class="row">
+                    <div class="col-lg-7 order-lg-1 order-2 banner-content animate__animated animate__zoomInDown animate__delay-1s">
+                        <h2 class="text-uppercase position-relative">Hello</h2>
+                        <h1 class="text-uppercase">I am Ashutosh Uniyal</h1>
+                        <div id="typing" class="position-relative">
+                            <h5 id="type" class="text-uppercase position-absolute"></h5>
                         </div>
-                        <div class="col-md-4 col-sm-6 mb-4">
-                            <div class="single-logo-item">
-                                <img src="images/skills/css.png" class="img-fluid">
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 mb-4">
-                            <div class="single-logo-item">
-                                <img src="images/skills/javascript.png" class="img-fluid">
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 mb-4">
-                            <div class="single-logo-item">
-                                <img src="images/skills/bootstrap.png" class="img-fluid">
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 mb-4">
-                            <div class="single-logo-item">
-                                <img src="images/skills/sql-file.png" class="img-fluid">
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 mb-4">
-                            <div class="single-logo-item">
-                                <img src="images/skills/php.png" class="img-fluid">
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 mb-4">
-                            <div class="single-logo-item">
-                                <img src="images/skills/react.png" class="img-fluid">
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 mb-4">
-                            <div class="single-logo-item">
-                                <img src="images/skills/python.png" class="img-fluid" id="python">
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 mb-4">
-                            <div class="single-logo-item">
-                                <img src="images/skills/csharp.png" class="img-fluid">
-                            </div>
+                        <div class="mt-5">
+                            <a class="main-btn primary-btn mt-5" href="https://wa.me/917983990200?text=Hire%20Me">Hire
+                                Me</a>
+                            <a class="main-btn secondary-btn ms-4" href="doc/Resume.pdf">Get CV</a>
                         </div>
                     </div>
-                </div>
-                <div class="offset-lg-2 col-lg-4 col-md-10">
-                    <div class="client-info">
-                        <div class="d-flex">
-                            <span id="exp" class="large">Fresher</span>
-                        </div>
-                        <div id="call" class="call-now d-flex py-4">
-                            <div>
-                                <span class="fa fa-phone-alt"></span>
-                            </div>
-                            <div class="ms-4">
-                                <p> Call Me Now</p>
-                                <h5>(+91)7983990200</h5>
-                            </div>
-                        </div>
-                        <div class="call-now d-flex py-4">
-                            <div>
-                                <span id="mail-icon" class="fas fa-envelope"></span>
-                            </div>
-                            <div class="ms-4">
-                                <p> Email</p>
-                                <a href="mailto:ashutoshuniyal2101@outlook.com?subject=Mail from portfolio website"><h5 id="mail">ashutoshuniyal2101@outlook.com</h5></a>
-                            </div>
+                    <div class="col-lg-5 order-lg-2 order-1">
+                        <div class="top-right-img">
+                            <img src="images/home-right.webp" class="img-fluid animate__animated animate__jackInTheBox animate__delay-1s">
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- About Section End-->
+        </section>
+        <!-- Banner Section End -->
 
-    <!-- Services Section -->
-    <section id="services" class="services_wrapper">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 text-center mb-5">
-                    <h2>SERVICE OFFERS</h2>
-                </div>
-                <div class="col-lg-3 col-sm-6 mb-4">
-                    <div class="card rounded-0 border-0 text-center py-5 px-3">
-                        <div>
-                            <img src="images/services-img/mouse.webp" class="img-fluid">
-                        </div>
-                        <h5 class="text-uppercase mt-5 mb-3">WEB DEVELOPMENT</h5>
+        <!-- About Section -->
+        <section id="about" class="about_wrapper">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-7 mb-4 mb-lg-0">
+                        <img src="images/about-us.webp" class="img-fluid hidden" alt="about-us">
+                    </div>
+                    <div class="col-lg-5 mb-4 mb-lg-0">
+                        <h3>Let's <br>Introduce about <br>myself</h3>
+                        <p>
+                            Hello there! I'm Ashutosh Uniyal, a passionate and aspiring full stack web developer. With a
+                            strong foundation in web technologies and a deep curiosity for all things digital, I'm
+                            excited to showcase my journey and creations in the world of web development.<br><br>
+                            As a recent entrant into the realm of full stack development, I bring a fresh perspective
+                            and an eagerness to learn and grow. My journey began with a fascination for crafting
+                            visually appealing and functional websites, and it has evolved into a comprehensive skill
+                            set that covers both front-end and back-end development.<br><br>
+                            From designing intuitive user interfaces to building robust server-side solutions, I've been
+                            on an incredible learning curve, absorbing knowledge and putting it into practice. This
+                            portfolio is a testament to my dedication, hard work, and the projects I've embarked upon
+                            during this exciting phase.<br><br>
+                            I believe in the power of collaboration and continuous improvement. I'm thrilled to connect
+                            with fellow developers, clients, and anyone who shares the same passion for technology. So
+                            take a look around, explore the projects I've worked on, and feel free to get in touch.
+                            Let's join forces to turn ideas into reality.<br><br>
+                            Thank you for stopping by and being a part of my journey!<br><br>
+                            Best regards,<br>
+                            Ashutosh Uniyal<br>
+                            Full Stack Web Developer
+                        </p>
+                        <a href="doc/Resume.pdf" class="main-btn primary-btn mt-4">Download CV</a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-6 mb-4">
-                    <div class="card rounded-0 border-0 text-center py-5 px-3">
-                        <div>
-                            <img src="images/services-img/ui-ux.webp" class="img-fluid">
-                        </div>
-                        <h5 class="text-uppercase mt-5 mb-3">UI/UX Design</h5>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 mb-4">
-                    <div class="card rounded-0 border-0 text-center py-5 px-3">
-                        <div>
-                            <img src="images/services-img/website.webp" class="img-fluid">
-                        </div>
-                        <h5 class="text-uppercase mt-5 mb-3">WEB DESIGN</h5>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 mb-4">
-                    <div class="card rounded-0 border-0 text-center py-5 px-3">
-                        <div>
-                            <img src="images/services-img/seo.webp" class="img-fluid">
-                        </div>
-                        <h5 class="text-uppercase mt-5 mb-3">SEO OPTIMIZE</h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Services Section End-->
-
-    <!-- Project Section -->
-    <section id="projects" class="project_wrapper">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 text-left mb-md-5 mb-2">
-                    <h2>QUALITY WORK <br> RECENTLY DONE PROJECTS</h2>
-                </div>
-            </div>
-            <div class="row">
-                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link active" id="pills-one-tab" data-bs-toggle="pill" data-bs-target="#pills-one" type="button" role="tab" aria-controls="pills-one" aria-selected="true">Popular</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="pills-two-tab" data-bs-toggle="pill" data-bs-target="#pills-two" type="button" role="tab" aria-controls="pills-two" aria-selected="false">Latest</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="pills-three-tab" data-bs-toggle="pill" data-bs-target="#pills-three" type="button" role="tab" aria-controls="pills-three" aria-selected="false">Upcoming</button>
-                    </li>
-                  </ul>
-
-                  <div class="tab-content" id="pills-tabContent">
-                    <div class="tab-pane fade show active" id="pills-one" role="tabpanel" aria-labelledby="pills-one-tab" tabindex="0">
+                <div class="row justify-content-center pt-5">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
                         <div class="row">
+                            <div class="col-md-4 col-sm-6 mb-4">
+                                <div class="single-logo-item hide">
+                                    <img src="images/skills/html.png" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 mb-4">
+                                <div class="single-logo-item hide">
+                                    <img src="images/skills/css.png" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 mb-4">
+                                <div class="single-logo-item hide">
+                                    <img src="images/skills/javascript.png" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 mb-4">
+                                <div class="single-logo-item hide">
+                                    <img src="images/skills/bootstrap.png" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 mb-4">
+                                <div class="single-logo-item hide">
+                                    <img src="images/skills/sql-file.png" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 mb-4">
+                                <div class="single-logo-item hide">
+                                    <img src="images/skills/php.png" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 mb-4">
+                                <div class="single-logo-item hide">
+                                    <img src="images/skills/react.png" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 mb-4">
+                                <div class="single-logo-item hide">
+                                    <img src="images/skills/python.png" class="img-fluid" id="python">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 mb-4">
+                                <div class="single-logo-item hide">
+                                    <img src="images/skills/csharp.png" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offset-lg-2 col-lg-4 col-md-10">
+                        <div class="client-info">
+                            <div class="d-flex">
+                                <span id="exp" class="large">Fresher</span>
+                            </div>
+                            <div id="call" class="call-now d-flex py-4">
+                                <div>
+                                    <span class="fa fa-phone-alt"></span>
+                                </div>
+                                <div class="ms-4">
+                                    <p> Call Me Now</p>
+                                    <h5>(+91)7983990200</h5>
+                                </div>
+                            </div>
+                            <div class="call-now d-flex py-4">
+                                <div>
+                                    <span id="mail-icon" class="fas fa-envelope"></span>
+                                </div>
+                                <div class="ms-4">
+                                    <p> Email</p>
+                                    <a href="mailto:ashutoshuniyal2101@outlook.com?subject=Mail from portfolio website">
+                                        <h5 id="mail">ashutoshuniyal2101@outlook.com</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Section End-->
+
+        <!-- Services Section -->
+        <section id="services" class="services_wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 text-center mb-5">
+                        <h2>SERVICE OFFERS</h2>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 mb-4 hide">
+                        <div class="card rounded-0 border-0 text-center py-5 px-3">
+                            <div>
+                                <img src="images/services-img/mouse.webp" class="img-fluid">
+                            </div>
+                            <h5 class="text-uppercase mt-5 mb-3">WEB DEVELOPMENT</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 mb-4 hide">
+                        <div class="card rounded-0 border-0 text-center py-5 px-3">
+                            <div>
+                                <img src="images/services-img/ui-ux.webp" class="img-fluid">
+                            </div>
+                            <h5 class="text-uppercase mt-5 mb-3">UI/UX Design</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 mb-4 hide">
+                        <div class="card rounded-0 border-0 text-center py-5 px-3">
+                            <div>
+                                <img src="images/services-img/website.webp" class="img-fluid">
+                            </div>
+                            <h5 class="text-uppercase mt-5 mb-3">WEB DESIGN</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 mb-4 hide">
+                        <div class="card rounded-0 border-0 text-center py-5 px-3">
+                            <div>
+                                <img src="images/services-img/seo.webp" class="img-fluid">
+                            </div>
+                            <h5 class="text-uppercase mt-5 mb-3">SEO OPTIMIZE</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Services Section End-->
+
+        <!-- Project Section -->
+        <section id="projects" class="project_wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 text-left mb-md-5 mb-2">
+                        <h2>QUALITY WORK <br> RECENTLY DONE PROJECTS</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-one-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-one" type="button" role="tab" aria-controls="pills-one"
+                                aria-selected="true">Popular</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-two-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-two" type="button" role="tab" aria-controls="pills-two"
+                                aria-selected="false">Latest</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-three-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-three" type="button" role="tab" aria-controls="pills-three"
+                                aria-selected="false">Upcoming</button>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-one" role="tabpanel"
+                            aria-labelledby="pills-one-tab" tabindex="0">
+                            <div class="row">
                                 <div class="col-lg-4 col-sm-6 mb-5 mt-4">
                                     <a href="http://i-notes.byethost22.com/" target="_blank">
                                         <div class="project-img">
@@ -253,250 +280,263 @@
                                     <h5 class="mb-0 mt-4">I-Notes</h5>
                                     <p>Notes Web-Application performing CRUD operations using PHP</p>
                                 </div>
-                            <div class="col-lg-4 col-sm-6 mb-5 mt-4">
-                                <div class="project-img">
-                                    <a href="#"><img src="./images/projects/portfolio.png" class="img-fluid w-100"></a>
-                                    <div class="overlay"><i class="fas fa-plus"></i></div>
+                                <div class="col-lg-4 col-sm-6 mb-5 mt-4">
+                                    <div class="project-img">
+                                        <a href="#"><img src="./images/projects/portfolio.png"
+                                                class="img-fluid w-100"></a>
+                                        <div class="overlay"><i class="fas fa-plus"></i></div>
+                                    </div>
+                                    <h5 class="mb-0 mt-4">Personal Portfolio</h5>
+                                    <p>Fully responsive website using HTML, CSS, and JS </p>
                                 </div>
-                                <h5 class="mb-0 mt-4">Personal Portfolio</h5>
-                                <p>Fully responsive website using HTML, CSS, and JS </p>
+                                <div class="col-lg-4 col-sm-6 mb-5 mt-4">
+                                    <a href="http://registration-form.lovestoblog.com/" target="_blank">
+                                        <div class="project-img">
+                                            <img src="./images/projects/survey.png" class="img-fluid w-100">
+                                            <div class="overlay"><i class="fas fa-plus"></i></div>
+                                        </div>
+                                    </a>
+                                    <h5 class="mb-0 mt-4">Survey Form</h5>
+                                    <p>A PHP based web form connected to backend with PHPmyAdmin</p>
+                                </div>
+                                <div class="col-lg-4 col-sm-6 mb-5 mt-4">
+                                    <a href="https://github.com/Dev-Ashutosh2021/Pharma-Centre" target="_blank">
+                                        <div class="project-img">
+                                            <img src="./images/projects/pharma.png" class="img-fluid w-100">
+                                            <div class="overlay"><i class="fas fa-plus"></i></div>
+                                        </div>
+                                    </a>
+                                    <h5 class="mb-0 mt-4">Pharma Centre</h5>
+                                    <p>Windows Form Desktop Application using C# with .NET Framework connected to
+                                        backend with Microsoft SQl Server</p>
+                                </div>
+                                <div class="col-lg-4 col-sm-6 mb-5 mt-4">
+                                    <a href="#">
+                                        <div class="project-img">
+                                            <img src="./images/projects/pglife.png" class="img-fluid w-100">
+                                            <div class="overlay"><i class="fas fa-plus"></i></div>
+                                        </div>
+                                    </a>
+                                    <h5 class="mb-0 mt-4">PG-Life</h5>
+                                    <p>Responsive PG search website using HTML, CSS, BOOTSTRAP, JS, AJAX and PHP</p>
+                                </div>
+                                <div class="col-lg-4 col-sm-6 mt-4">
+                                    <a href="https://cafe-menu-app.vercel.app/" target="_blank">
+                                        <div class="project-img">
+                                            <img src="./images/projects/cafe.png" class="img-fluid w-100">
+                                            <div class="overlay"><i class="fas fa-plus"></i></div>
+                                        </div>
+                                    </a>
+                                    <h5 class="mb-0 mt-4">Cafe Menu</h5>
+                                    <p>Menu design of a Restaurant using HTML and CSS</p>
+                                </div>
                             </div>
-                            <div class="col-lg-4 col-sm-6 mb-5 mt-4">
-                                <a href="http://registration-form.lovestoblog.com/" target="_blank">
-                                    <div class="project-img">
-                                        <img src="./images/projects/survey.png" class="img-fluid w-100">
-                                        <div class="overlay"><i class="fas fa-plus"></i></div>
-                                    </div>
-                                </a>
-                                <h5 class="mb-0 mt-4">Survey Form</h5>
-                                <p>A PHP based web form connected to backend with PHPmyAdmin</p>
-                            </div>
-                            <div class="col-lg-4 col-sm-6 mb-5 mt-4">
-                                <a href="https://github.com/Dev-Ashutosh2021/Pharma-Centre" target="_blank">
-                                    <div class="project-img">
-                                        <img src="./images/projects/pharma.png" class="img-fluid w-100">
-                                        <div class="overlay"><i class="fas fa-plus"></i></div>
-                                    </div>
-                                </a>
-                                <h5 class="mb-0 mt-4">Pharma Centre</h5>
-                                <p>Windows Form Desktop Application using C# with .NET Framework connected to backend with Microsoft SQl Server</p>
-                            </div>
-                            <div class="col-lg-4 col-sm-6 mb-5 mt-4">
-                                <a href="#">
-                                    <div class="project-img">
-                                        <img src="./images/projects/pglife.png" class="img-fluid w-100">
-                                        <div class="overlay"><i class="fas fa-plus"></i></div>
-                                    </div>
-                                </a>
-                                <h5 class="mb-0 mt-4">PG-Life</h5>
-                                <p>Responsive PG search website using HTML, CSS, BOOTSTRAP, JS, AJAX and PHP</p>
-                            </div>
-                            <div class="col-lg-4 col-sm-6 mt-4">
-                                <a href="https://cafe-menu-app.vercel.app/" target="_blank">
-                                    <div class="project-img">
-                                        <img src="./images/projects/cafe.png" class="img-fluid w-100">
-                                        <div class="overlay"><i class="fas fa-plus"></i></div>
-                                    </div>
-                                </a>
-                                <h5 class="mb-0 mt-4">Cafe Menu</h5>
-                                <p>Menu design of a Restaurant using HTML and CSS</p>
-                            </div>
-                        </div> 
-                    </div>
+                        </div>
 
-                    <div class="tab-pane fade" id="pills-two" role="tabpanel" aria-labelledby="pills-two-tab" tabindex="0">
-                        <div class="row">
-                            <div class="col-lg-4 col-sm-6 mb-5 mt-4">
-                                <a href="http://i-notes.byethost22.com/" target="_blank">
+                        <div class="tab-pane fade" id="pills-two" role="tabpanel" aria-labelledby="pills-two-tab"
+                            tabindex="0">
+                            <div class="row">
+                                <div class="col-lg-4 col-sm-6 mb-5 mt-4">
+                                    <a href="http://i-notes.byethost22.com/" target="_blank">
+                                        <div class="project-img">
+                                            <img src="./images/projects/i-notes.png" class="img-fluid w-100">
+                                            <div class="overlay"><i class="fas fa-plus"></i></div>
+                                        </div>
+                                    </a>
+                                    <h5 class="mb-0 mt-4">I-Notes</h5>
+                                    <p>Notes Web-Application performing CRUD operations using PHP</p>
+                                </div>
+                                <div class="col-lg-4 col-sm-6 mb-5 mt-4">
                                     <div class="project-img">
-                                        <img src="./images/projects/i-notes.png" class="img-fluid w-100">
+                                        <a href="#"><img src="./images/projects/portfolio.png"
+                                                class="img-fluid w-100"></a>
                                         <div class="overlay"><i class="fas fa-plus"></i></div>
                                     </div>
-                                </a>
-                                <h5 class="mb-0 mt-4">I-Notes</h5>
-                                <p>Notes Web-Application performing CRUD operations using PHP</p>
+                                    <h5 class="mb-0 mt-4">Personal Portfolio</h5>
+                                    <p>Fully responsive website using HTML, CSS, and JS </p>
+                                </div>
+                                <div class="col-lg-4 col-sm-6 mb-5 mt-4">
+                                    <a href="http://registration-form.lovestoblog.com/" target="_blank">
+                                        <div class="project-img">
+                                            <img src="./images/projects/survey.png" class="img-fluid w-100">
+                                            <div class="overlay"><i class="fas fa-plus"></i></div>
+                                        </div>
+                                    </a>
+                                    <h5 class="mb-0 mt-4">Survey Form</h5>
+                                    <p>A PHP based web form connected to backend with PHPmyAdmin</p>
+                                </div>
+                                <div class="col-lg-4 col-sm-6 mb-5 mt-4">
+                                    <a href="https://github.com/Dev-Ashutosh2021/Pharma-Centre" target="_blank">
+                                        <div class="project-img">
+                                            <img src="./images/projects/pharma.png" class="img-fluid w-100">
+                                            <div class="overlay"><i class="fas fa-plus"></i></div>
+                                        </div>
+                                    </a>
+                                    <h5 class="mb-0 mt-4">Pharma Centre</h5>
+                                    <p>Windows Form Desktop Application using C# with .NET Framework connected to
+                                        backend with Microsoft SQl Server</p>
+                                </div>
+                                <div class="col-lg-4 col-sm-6 mb-5 mt-4">
+                                    <a href="#">
+                                        <div class="project-img">
+                                            <img src="./images/projects/pglife.png" class="img-fluid w-100">
+                                            <div class="overlay"><i class="fas fa-plus"></i></div>
+                                        </div>
+                                    </a>
+                                    <h5 class="mb-0 mt-4">PG-Life</h5>
+                                    <p>Responsive PG search website using HTML, CSS, BOOTSTRAP, JS, AJAX and PHP</p>
+                                </div>
+                                <div class="col-lg-4 col-sm-6 mt-4">
+                                    <a href="https://cafe-menu-app.vercel.app/" target="_blank">
+                                        <div class="project-img">
+                                            <img src="./images/projects/cafe.png" class="img-fluid w-100">
+                                            <div class="overlay"><i class="fas fa-plus"></i></div>
+                                        </div>
+                                    </a>
+                                    <h5 class="mb-0 mt-4">Cafe Menu</h5>
+                                    <p>Menu design of a Restaurant using HTML and CSS</p>
+                                </div>
                             </div>
-                        <div class="col-lg-4 col-sm-6 mb-5 mt-4">
-                            <div class="project-img">
-                                <a href="#"><img src="./images/projects/portfolio.png" class="img-fluid w-100"></a>
-                                <div class="overlay"><i class="fas fa-plus"></i></div>
-                            </div>
-                            <h5 class="mb-0 mt-4">Personal Portfolio</h5>
-                            <p>Fully responsive website using HTML, CSS, and JS </p>
                         </div>
-                        <div class="col-lg-4 col-sm-6 mb-5 mt-4">
-                            <a href="http://registration-form.lovestoblog.com/" target="_blank">
-                                <div class="project-img">
-                                    <img src="./images/projects/survey.png" class="img-fluid w-100">
-                                    <div class="overlay"><i class="fas fa-plus"></i></div>
-                                </div>
-                            </a>
-                            <h5 class="mb-0 mt-4">Survey Form</h5>
-                            <p>A PHP based web form connected to backend with PHPmyAdmin</p>
-                        </div>
-                        <div class="col-lg-4 col-sm-6 mb-5 mt-4">
-                            <a href="https://github.com/Dev-Ashutosh2021/Pharma-Centre" target="_blank">
-                                <div class="project-img">
-                                    <img src="./images/projects/pharma.png" class="img-fluid w-100">
-                                    <div class="overlay"><i class="fas fa-plus"></i></div>
-                                </div>
-                            </a>
-                            <h5 class="mb-0 mt-4">Pharma Centre</h5>
-                            <p>Windows Form Desktop Application using C# with .NET Framework connected to backend with Microsoft SQl Server</p>
-                        </div>
-                        <div class="col-lg-4 col-sm-6 mb-5 mt-4">
-                            <a href="#">
-                                <div class="project-img">
-                                    <img src="./images/projects/pglife.png" class="img-fluid w-100">
-                                    <div class="overlay"><i class="fas fa-plus"></i></div>
-                                </div>
-                            </a>
-                            <h5 class="mb-0 mt-4">PG-Life</h5>
-                            <p>Responsive PG search website using HTML, CSS, BOOTSTRAP, JS, AJAX and PHP</p>
-                        </div>
-                        <div class="col-lg-4 col-sm-6 mt-4">
-                            <a href="https://cafe-menu-app.vercel.app/" target="_blank">
-                                <div class="project-img">
-                                    <img src="./images/projects/cafe.png" class="img-fluid w-100">
-                                    <div class="overlay"><i class="fas fa-plus"></i></div>
-                                </div>
-                            </a>
-                            <h5 class="mb-0 mt-4">Cafe Menu</h5>
-                            <p>Menu design of a Restaurant using HTML and CSS</p>
-                        </div>
-                    </div> 
-                    </div>
 
-                    <div class="tab-pane fade" id="pills-three" role="tabpanel" aria-labelledby="pills-three-tab" tabindex="0">
-                        <div class="row">
-                            <div class="col-lg-4 col-sm-6 mb-5 mt-4">
-                                <a href="http://i-notes.byethost22.com/" target="_blank">
+                        <div class="tab-pane fade" id="pills-three" role="tabpanel" aria-labelledby="pills-three-tab"
+                            tabindex="0">
+                            <div class="row">
+                                <div class="col-lg-4 col-sm-6 mb-5 mt-4">
+                                    <a href="http://i-notes.byethost22.com/" target="_blank">
+                                        <div class="project-img">
+                                            <img src="./images/projects/i-notes.png" class="img-fluid w-100">
+                                            <div class="overlay"><i class="fas fa-plus"></i></div>
+                                        </div>
+                                    </a>
+                                    <h5 class="mb-0 mt-4">I-Notes</h5>
+                                    <p>Notes Web-Application performing CRUD operations using PHP</p>
+                                </div>
+                                <div class="col-lg-4 col-sm-6 mb-5 mt-4">
                                     <div class="project-img">
-                                        <img src="./images/projects/i-notes.png" class="img-fluid w-100">
+                                        <a href="#"><img src="./images/projects/portfolio.png"
+                                                class="img-fluid w-100"></a>
                                         <div class="overlay"><i class="fas fa-plus"></i></div>
                                     </div>
-                                </a>
-                                <h5 class="mb-0 mt-4">I-Notes</h5>
-                                <p>Notes Web-Application performing CRUD operations using PHP</p>
-                            </div>
-                        <div class="col-lg-4 col-sm-6 mb-5 mt-4">
-                            <div class="project-img">
-                                <a href="#"><img src="./images/projects/portfolio.png" class="img-fluid w-100"></a>
-                                <div class="overlay"><i class="fas fa-plus"></i></div>
-                            </div>
-                            <h5 class="mb-0 mt-4">Personal Portfolio</h5>
-                            <p>Fully responsive website using HTML, CSS, and JS </p>
-                        </div>
-                        <div class="col-lg-4 col-sm-6 mb-5 mt-4">
-                            <a href="http://registration-form.lovestoblog.com/" target="_blank">
-                                <div class="project-img">
-                                    <img src="./images/projects/survey.png" class="img-fluid w-100">
-                                    <div class="overlay"><i class="fas fa-plus"></i></div>
+                                    <h5 class="mb-0 mt-4">Personal Portfolio</h5>
+                                    <p>Fully responsive website using HTML, CSS, and JS </p>
                                 </div>
-                            </a>
-                            <h5 class="mb-0 mt-4">Survey Form</h5>
-                            <p>A PHP based web form connected to backend with PHPmyAdmin</p>
-                        </div>
-                        <div class="col-lg-4 col-sm-6 mb-5 mt-4">
-                            <a href="https://github.com/Dev-Ashutosh2021/Pharma-Centre" target="_blank">
-                                <div class="project-img">
-                                    <img src="./images/projects/pharma.png" class="img-fluid w-100">
-                                    <div class="overlay"><i class="fas fa-plus"></i></div>
+                                <div class="col-lg-4 col-sm-6 mb-5 mt-4">
+                                    <a href="http://registration-form.lovestoblog.com/" target="_blank">
+                                        <div class="project-img">
+                                            <img src="./images/projects/survey.png" class="img-fluid w-100">
+                                            <div class="overlay"><i class="fas fa-plus"></i></div>
+                                        </div>
+                                    </a>
+                                    <h5 class="mb-0 mt-4">Survey Form</h5>
+                                    <p>A PHP based web form connected to backend with PHPmyAdmin</p>
                                 </div>
-                            </a>
-                            <h5 class="mb-0 mt-4">Pharma Centre</h5>
-                            <p>Windows Form Desktop Application using C# with .NET Framework connected to backend with Microsoft SQl Server</p>
-                        </div>
-                        <div class="col-lg-4 col-sm-6 mb-5 mt-4">
-                            <a href="#">
-                                <div class="project-img">
-                                    <img src="./images/projects/pglife.png" class="img-fluid w-100">
-                                    <div class="overlay"><i class="fas fa-plus"></i></div>
+                                <div class="col-lg-4 col-sm-6 mb-5 mt-4">
+                                    <a href="https://github.com/Dev-Ashutosh2021/Pharma-Centre" target="_blank">
+                                        <div class="project-img">
+                                            <img src="./images/projects/pharma.png" class="img-fluid w-100">
+                                            <div class="overlay"><i class="fas fa-plus"></i></div>
+                                        </div>
+                                    </a>
+                                    <h5 class="mb-0 mt-4">Pharma Centre</h5>
+                                    <p>Windows Form Desktop Application using C# with .NET Framework connected to
+                                        backend with Microsoft SQl Server</p>
                                 </div>
-                            </a>
-                            <h5 class="mb-0 mt-4">PG-Life</h5>
-                            <p>Responsive PG search website using HTML, CSS, BOOTSTRAP, JS, AJAX and PHP</p>
-                        </div>
-                        <div class="col-lg-4 col-sm-6 mt-4">
-                            <a href="https://cafe-menu-app.vercel.app/" target="_blank">
-                                <div class="project-img">
-                                    <img src="./images/projects/cafe.png" class="img-fluid w-100">
-                                    <div class="overlay"><i class="fas fa-plus"></i></div>
+                                <div class="col-lg-4 col-sm-6 mb-5 mt-4">
+                                    <a href="#">
+                                        <div class="project-img">
+                                            <img src="./images/projects/pglife.png" class="img-fluid w-100">
+                                            <div class="overlay"><i class="fas fa-plus"></i></div>
+                                        </div>
+                                    </a>
+                                    <h5 class="mb-0 mt-4">PG-Life</h5>
+                                    <p>Responsive PG search website using HTML, CSS, BOOTSTRAP, JS, AJAX and PHP</p>
                                 </div>
-                            </a>
-                            <h5 class="mb-0 mt-4">Cafe Menu</h5>
-                            <p>Menu design of a Restaurant using HTML and CSS</p>
-                        </div>
-                    </div>  
-                    </div>
-                  </div>
-            </div>
-        </div>
-    </section>
-    <!-- Project Section -->
-
-    <!-- Footer Section -->
-    <section id="contact" class="footer_wrapper mt-3 mt-md-0">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 newsletter text-center px-4">
-                    <div>
-                        <h3 class="text-white">get update from anywhere</h3>
-                        <p class="text-white">If any query please let me know</p>
-                        <form class="row g-3 justify-content-center mt-4" action="https://getform.io/f/58035969-29ee-448f-8bae-a3d885a65cd5" method="post">
-                            <div class="col col-sm-6 col-lg-4">
-                                <input type="email" class="form-control" placeholder="Email Address" name="email">
+                                <div class="col-lg-4 col-sm-6 mt-4">
+                                    <a href="https://cafe-menu-app.vercel.app/" target="_blank">
+                                        <div class="project-img">
+                                            <img src="./images/projects/cafe.png" class="img-fluid w-100">
+                                            <div class="overlay"><i class="fas fa-plus"></i></div>
+                                        </div>
+                                    </a>
+                                    <h5 class="mb-0 mt-4">Cafe Menu</h5>
+                                    <p>Menu design of a Restaurant using HTML and CSS</p>
+                                </div>
                             </div>
-                            <div class="col col-auto">
-                                <button type="submit" class="main-btn secondary-btn border-white mb-3">Send</button>
-                            </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="container mt-5">
-            <div class="row align-items-center justify-content-center">
-                <div class="col-12 text-center">
-                    <div class="footer-logo mb-3 mb-md-0">
-                        <img src="images/logo.png" class="img-fluid" alt="footer-logo">
+        </section>
+        <!-- Project Section -->
+
+        <!-- Footer Section -->
+        <section id="contact" class="footer_wrapper mt-3 mt-md-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 newsletter text-center px-4">
+                        <div>
+                            <h3 class="text-white">get update from anywhere</h3>
+                            <p class="text-white">If any query please let me know</p>
+                            <form class="row g-3 justify-content-center mt-4"
+                                action="https://getform.io/f/58035969-29ee-448f-8bae-a3d885a65cd5" method="post">
+                                <div class="col col-sm-6 col-lg-4">
+                                    <input type="email" class="form-control" placeholder="Email Address" name="email">
+                                </div>
+                                <div class="col col-auto">
+                                    <button type="submit" class="main-btn secondary-btn border-white mb-3">Send</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
-                    <div class="my-4 social-icons">
-                        <h5>Connect With Me</h5>
-                        <ul class="list-unstyled d-flex justify-content-center align-items-center">
-                            <li><a href="https://github.com/Dev-Ashutosh2021" target="_blank"><i class="fab fa-github"></i></a></li>
-                            <li><a href="https://www.linkedin.com/in/ashutosh-uniyal-061171276/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                            <li><a href="mailto:ashutoshuniyal2101@outlook.com?subject=Mail from portfolio website"><i class="fas fa-envelope"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-8 col-sm-12">
-                    <p class="footer-text text-center my-2">Copyright &copy; 2023 All rights reserved | This website is made with <i class="far fa-heart"></i> by <a href="https://github.com/Dev-Ashutosh2021" target="_blank">Ashutosh Uniyal</a></p>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- Footer Section End-->
-
+            <div class="container mt-5">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="footer-logo mb-3 mb-md-0">
+                            <img src="images/logo.png" class="img-fluid" alt="footer-logo">
+                        </div>
+                        <div class="my-4 social-icons">
+                            <h5>Connect With Me</h5>
+                            <ul class="list-unstyled d-flex justify-content-center align-items-center">
+                                <li><a href="https://github.com/Dev-Ashutosh2021" target="_blank"><i
+                                            class="fab fa-github"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/ashutosh-uniyal-061171276/" target="_blank"><i
+                                            class="fab fa-linkedin"></i></a></li>
+                                <li><a href="mailto:ashutoshuniyal2101@outlook.com?subject=Mail from portfolio website"><i
+                                            class="fas fa-envelope"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-sm-12">
+                        <p class="footer-text text-center my-2">Copyright &copy; 2023 All rights reserved | This website
+                            is made with <i class="far fa-heart"></i> by <a href="https://github.com/Dev-Ashutosh2021"
+                                target="_blank">Ashutosh Uniyal</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer Section End-->
     </div>
 
-<!--Bootstrap CDN JS-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!--Bootstrap CDN JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 
-<!--Custom JS-->
-<script src="js/main.js"></script>
+    <!--Custom JS-->
+    <script src="js/main.js"></script>
 
-<!-- Type JS -->
-<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-<script>
-  var typed = new Typed('#type', {
-  strings: ['Front-End Web Developer','Back-End Web Developer','Full-Stack Web Developer','Coder'],
-  typeSpeed: 60,
-  backSpeed: 40,
-  loop:true,
-  showCursor:false
-});
-</script>
+    <!-- Type JS -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#type', {
+            strings: ['Front-End Web Developer', 'Back-End Web Developer', 'Full-Stack Web Developer', 'Coder'],
+            typeSpeed: 60,
+            backSpeed: 40,
+            loop: true,
+            showCursor: false
+        });
+    </script>
 </body>
 
 </html>
